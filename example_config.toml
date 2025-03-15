@@ -1,0 +1,54 @@
+[project]
+name = "HALPI2"
+
+[plate]
+size = { width_mm = 260.0, height_mm = 200.0 }
+thicknesses_mm = [8.0, 4.0, 10.0]
+
+[pcb]
+thickness_mm = 1.53
+bottom_clearance_mm = 5.0
+top_clearance_mm = 35.0
+
+[plate_alignment_pins]
+alignment_pin_corner_offset = { x_mm = 5.0, y_mm = 5.0 }
+pressure_pin_corner_offset = { x_mm = 5.0, y_mm = 10.0 }
+plate_alignment_pin_type = "TestFixture_PlateAlignmentPin_5.0mm"
+pressure_pin_type = "TestFixture_PressurePin_3.0mm"
+
+[tester_board]
+offset_mm = 31.0
+mount_pillar_type = "TestFixture_TesterBoardMountPillar_10.0mm"
+mount_pillar_locations = [
+    { x_mm = -90.17, y_mm = -68.58 },
+    { x_mm =  90.17, y_mm = -68.58 },
+    { x_mm = -90.17, y_mm =  68.58 },
+    { x_mm =  90.17, y_mm =  68.58 },
+    ]
+
+[annotations]
+"TestFixture_P75" = [
+    { type = "SimpleHole", diameter_mm = 1.40 },
+    { type = "SimpleHole", diameter_mm = 2.2 },
+    { type = "None" }
+]
+"TestFixture_AlignmentPin_5.0mm" = [
+    { type = "SimpleHole", diameter_mm = 5.6 },
+    { type = "CounterboreHole", diameter_mm = 5.2, counterbore_diameter_mm = 6.0, counterbore_depth_mm = 1.0 },
+    { type = "None" }
+]
+"TestFixture_PressurePin_3.0mm" = [
+    { type = "None" },
+    { type = "None" },
+    { type = "SimpleHole", diameter_mm = 3.2 }
+]
+"TestFixture_PlateAlignmentPin_5.0mm" = [
+    { type = "SimpleHole", diameter_mm = 5.2 },
+    { type = "SimpleHole", diameter_mm = 3.2 },
+    { type = "None" }
+]
+"TestFixture_TesterBoardMountPillar_10.0mm" = [
+    { type = "CounterboreHole", diameter_mm = 3.2, counterbore_diameter_mm = 6.0, counterbore_depth_mm = 4.0 },
+    { type = "None" },
+    { type = "None" }
+]
