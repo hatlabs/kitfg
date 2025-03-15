@@ -1,5 +1,7 @@
 # KiCad Test Fixture Generator
 
+![Example output](https://github.com/hatlabs/kitfg/blob/main/ocp_screenshot.jpg?raw=true)
+
 ## Introduction
 
 KiTFG is a Python script that generates bed-of-nails test fixture plates for KiCad projects. It uses the KiCad Python API to extract the board outline and test pin positions from a KiCad PCB file and generates solid modeling STEP files for 3D printing or CNC machining.
