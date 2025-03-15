@@ -26,6 +26,7 @@ def main():
     edge = kf.get_edge(board)
 
     plates = kf.render_plates(config, footprints, edge)
+    args.output.mkdir(exist_ok=True)
     for i, plate in enumerate(plates):
         bd.export_step(
             plate, args.output / f"{config.project.name}_plate_{"ABC"[i]}.step"
