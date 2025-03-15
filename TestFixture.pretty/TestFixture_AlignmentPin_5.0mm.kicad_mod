@@ -1,0 +1,124 @@
+(footprint "TestFixture_AlignmentPin_5.0mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81c08b24-d8db-4f66-b43f-80594be1194d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestFixture_AlignmentPin_5.0mm"
+		(at 0 -0.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "978574b7-ca24-4cd8-a665-cf1c4f765afa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ec4eeda9-94ac-424c-8714-11d412d87108")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "248ef95f-ad61-4404-8c16-9b6fc7759d93")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(fp_line
+		(start -1.3 -2.6)
+		(end -1.3 2.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "Eco1.User")
+		(uuid "c4a69f82-f6ff-48f1-bf68-12f1481ed16f")
+	)
+	(fp_line
+		(start 1.3 -2.6)
+		(end 1.3 2.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "Eco1.User")
+		(uuid "3d4c02e4-1f06-492d-9656-0394edce3c07")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.1 0)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "9e971d1d-2d7b-413b-9d84-1db60b9e6888")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.6 0)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "8ac19023-eb0c-4c2d-b509-ba29f7055718")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1e8f45b5-1935-4d57-b9e8-5818e9b4c317")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8aacac9c-895f-40f5-95e6-36b77ddbafd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

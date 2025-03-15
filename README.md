@@ -15,10 +15,12 @@ TODO: Provide a more user-friendly installation process.
 - Run `pixi install` in the repository directory
 - Start a new shell in the pixi environment: `pixi shell`
 - Install the project in-place: `pip install -e .`
+- Add the TestFixture.pretty footprint library to your KiCad, either as a global or project-specific library.
 
 ## Usage
 
-Have a KiCad project open in the KiCad PCB editor. Make sure you have enabled the Python scripting API in the KiCad settings. Then, run the following command:
+Annotate your KiCad project using the footprints from the `TestFixture.pretty` library. Keep the PCB Editor open.
+Make sure you have enabled the Python scripting API in th KiCad settings. Then, run the following command:
 
 ```shell
 kitfg example_config.toml output

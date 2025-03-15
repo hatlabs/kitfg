@@ -1,0 +1,125 @@
+(footprint "TestFixture_P75"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c6114e91-b26b-4c97-97a4-af33a6f5a7f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestFixture_P75"
+		(at 0 -0.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a8b95159-57d4-43c0-a996-92884acbb740")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c77311a3-084b-434b-a401-12311194f807")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "387c35b7-9609-40a9-b83a-c74b9f26ed2e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(fp_line
+		(start -0.7 -0.7)
+		(end 0.7 0.7)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "Eco1.User")
+		(uuid "4541c4cd-e634-4d27-abf0-c48e11964767")
+	)
+	(fp_line
+		(start 0.7 -0.7)
+		(end -0.7 0.7)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "Eco1.User")
+		(uuid "747ef29e-7aa5-4771-89d3-4497414b5d04")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.1 0)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "c613fc0a-0666-4002-9cd0-e8ae566fa45d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.7 0)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "Eco1.User")
+		(uuid "3fdd4f9a-f39d-4449-a9a4-ff582d9ac811")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.95 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cb54bebf-a3f9-4d5f-8a53-633bbc72f248")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a29b714-a0ad-412d-84d1-5dafdf939a22")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
