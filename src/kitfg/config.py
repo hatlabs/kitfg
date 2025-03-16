@@ -1,4 +1,4 @@
-from typing import List, NamedTuple, Union
+from typing import List, NamedTuple
 
 import toml
 from pydantic import BaseModel, field_validator
@@ -13,7 +13,7 @@ class CounterboreHole(SimpleHole):
     counterbore_depth_mm: float
 
 
-HoleType = Union[SimpleHole, CounterboreHole, None]
+HoleType = SimpleHole | CounterboreHole | None
 
 
 class Annotation(NamedTuple):
@@ -24,6 +24,8 @@ class Annotation(NamedTuple):
 
 class Project(BaseModel):
     name: str
+    test_point_auto_annotation_type: str | None = None
+    tht_pad_auto_annotation_type: str | None = None
 
 
 class PlateSize(BaseModel):
@@ -68,10 +70,13 @@ class PlateAlignmentPins(BaseModel):
     pressure_pin_corner_offset: Location
     plate_alignment_pin_type: str
     pressure_pin_type: str
+    pressure_pin_screw_hole_diameter_mm: float
 
 
 class TesterBoard(BaseModel):
     offset_mm: float
+    diameter_mm: float
+    screw_hole_diameter_mm: float
     mount_pillar_type: str
     mount_pillar_locations: List[Location]
 

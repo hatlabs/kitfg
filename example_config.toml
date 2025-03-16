@@ -1,5 +1,8 @@
 [project]
 name = "HALPI2"
+auto-annotate = true
+test_point_auto_annotation_type = "TestFixture_P75"
+tht_pad_auto_annotation_type = "TestFixture_P75"
 
 [plate]
 size = { width_mm = 260.0, height_mm = 200.0 }
@@ -12,12 +15,15 @@ top_clearance_mm = 35.0
 
 [plate_alignment_pins]
 alignment_pin_corner_offset = { x_mm = 5.0, y_mm = 5.0 }
-pressure_pin_corner_offset = { x_mm = 5.0, y_mm = 10.0 }
+pressure_pin_corner_offset = { x_mm = 5.0, y_mm = 15.0 }
 plate_alignment_pin_type = "TestFixture_PlateAlignmentPin_5.0mm"
 pressure_pin_type = "TestFixture_PressurePin_3.0mm"
+pressure_pin_screw_hole_diameter_mm = 2.9
 
 [tester_board]
 offset_mm = 31.0
+diameter_mm = 12.0
+screw_hole_diameter_mm = 2.9
 mount_pillar_type = "TestFixture_TesterBoardMountPillar_10.0mm"
 mount_pillar_locations = [
     { x_mm = -90.17, y_mm = -68.58 },
@@ -27,9 +33,24 @@ mount_pillar_locations = [
     ]
 
 [annotations]
+"TestFixture_NoPin" = [
+    { type = "None" },
+    { type = "None" },
+    { type = "None" }
+]
+"TestFixture_P50" = [
+    { type = "SimpleHole", diameter_mm = 0.9 },
+    { type = "SimpleHole", diameter_mm = 1.7 },
+    { type = "None" }
+]
 "TestFixture_P75" = [
     { type = "SimpleHole", diameter_mm = 1.40 },
     { type = "SimpleHole", diameter_mm = 2.2 },
+    { type = "None" }
+]
+"TestFixture_P100" = [
+    { type = "SimpleHole", diameter_mm = 1.70 },
+    { type = "SimpleHole", diameter_mm = 2.5 },
     { type = "None" }
 ]
 "TestFixture_AlignmentPin_5.0mm" = [
